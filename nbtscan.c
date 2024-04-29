@@ -8,6 +8,7 @@
 #if HAVE_STDINT_H
 #include <stdint.h>
 #endif
+#include <unistd.h>
 #include "statusq.h"
 #include "range.h"
 #include "list.h"
@@ -16,7 +17,7 @@
 int seperate_segment_scan=0;
 int quiet=0;
 
-print_banner() {
+void print_banner() {
   printf("\nNBTscan version 1.5.1. Copyright (C) 1999-2003 Alla Bezroutchko.\n");
   printf("This is a free software and it comes with absolutely no warranty.\n");
   printf("You can use, distribute and modify it under terms of GNU GPL.\n\n");
